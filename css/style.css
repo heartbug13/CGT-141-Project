@@ -1,0 +1,498 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+/*header and navbar*/
+header {
+  background-color: black;
+}
+.header {
+  margin-bottom: -43px;
+}
+header h1 {
+  color: #BC1264;
+  font-family: 'Mohave';
+  font-size: 64px;
+  font-weight: 900;
+  padding-top: 32px;
+  padding-left: 35px;
+}
+#filterButtonAndIcon {
+  background-color: black;
+  float: right;
+}
+#filterButton {
+  width: 126px;
+  height: 48px;
+  border-radius: 8px;
+  background-color: #BC1264;
+  color: white;
+  font-size: 16px;
+  margin-top: 20px;
+  margin-right: 67px;
+  float: right;
+}
+#toogleNav{
+  background-color: black;
+  border: none;
+  color: #FFCD9E;
+  padding: 12px 16px;
+  font-size: 40px;
+  float: right;
+  margin-top: 35px;
+  visibility: hidden;
+}
+ul {
+  list-style-type: none;
+  overflow: hidden;
+  margin: 0px;
+  padding: 0px;
+}
+li {
+  float: left;
+  padding-bottom: 30px;
+  padding-top: 15px;
+}
+li a {
+  color: white;
+  padding: 35px;
+  text-decoration: none;
+  font-size: 24px; /**/
+  font-family: 'DM Sans';
+}
+li:hover {
+  background-color: #FFCD9E;
+}
+nav {
+  background-color: black;
+  width: 100%;
+  margin: 0px;
+}
+@media screen and (max-width: 1678px) {
+  li {
+      float: none;
+      width: 100%;
+  }
+  .nav {
+    display: none;
+    }
+  #toogleNav{
+    visibility: visible;
+  }
+ }
+
+/*home page*/
+
+#filter {
+  background-color: #E5E5E5;
+  margin: 50px 40px;
+  border-radius: 68px;
+  padding: 42px;
+}
+#filter h1{
+  font-size: 40px;
+  font-family: 'Inter';
+}
+#filter button{
+  color: white;
+  background-color: black;
+  height: 27px;
+  border: none;
+  border-radius: 68px;
+  padding: 0px 20px 0px 20px;
+  margin-right: 20px;
+  margin-top: 16px;
+}
+#first{
+  color: #ED7507;
+}
+#second{
+  color: #BC1264
+}
+
+.shows {
+  background-color: #BC1264;
+  margin: 50px 40px;
+  padding: 30px;
+  border-radius: 68px;
+  display: flex;
+  flex-direction: row;
+}
+.imageRow img {
+  width: 277px;
+  height: 348px;
+  border-radius: 30px;
+  margin-right: 40px;
+}
+.imageRow {
+  display: grid;
+  align-content: center;
+}
+.infoRow {
+  padding-left: 10px;
+}
+.ratingRow {
+  display: grid;
+  align-content: center;
+}
+.infoRow h1{
+  font-size: 48px;
+  font-family: 'Mohave';
+}
+.infoRow p{
+  font-size: 15px;
+  font-family: 'DM Sans';
+  margin-top: -20px;
+}
+.infoRow h3{
+  font-size: 20px;
+  font-family: 'DM Sans';
+}
+.ratingRow h2{
+  font-size: 128px;
+  color: #ED7507;
+  font-family: 'Inter';
+  font-weight: 900;
+}
+.streaming {
+  background-color: white;
+  color: black;
+}
+.genre {
+  background-color: black;
+  color: white;
+}
+.infoRow button {
+  height: 27px;
+  border: none;
+  border-radius: 68px;
+  padding: 0px 20px 0px 20px;
+  margin-right: 20px;
+  margin-top: 16px;
+}
+
+@media screen and (max-width: 1200px) {
+  #filter {
+    margin: 50px 0px;
+  }
+  #filter h1{
+    text-align: center;
+  }
+  .filterButtons{
+    text-align: center;
+  }
+  .shows{
+    margin: 50px 0px;
+    flex-direction: column;
+    display: grid;
+    justify-items: center;
+  }
+  .infoRow{
+    text-align: center;
+  }
+  .ratingRow{
+    padding-top: 20px;
+    height: 130px;
+  }
+  .imageRow img{
+    margin-right: 0px;
+  }
+ }
+
+/*media platform page*/
+.streamingPlatform{
+  background-color: #BC1264;
+  margin: 40px 40px;
+  padding: 38px;
+  border-radius: 68px;
+  display: flex;
+  flex-direction: row;
+  font-size: 30px;
+}
+.app{
+  width: 30%
+}
+.app img {
+  width: 300px;
+  height: 300px;
+  border-radius: 30px;
+}
+.text{
+  width: 30%;
+  display: grid;
+  align-content: center;
+}
+.text h1 {
+  font-size: 32px;
+  font-family: 'DM Sans';
+}
+.toWeb{
+  width: 30%;
+  display: grid;
+  align-content: center;
+}
+.toWeb button{
+  width: 472px;
+  height: 187px;
+  background-color: #ED7507;
+  font-size: 48px;
+  font-family: 'DM Sans';
+  border-radius: 45px;
+  color: black;
+}
+
+@media screen and (max-width: 1300px) {
+  .streamingPlatform{
+    flex-direction: column;
+    margin: 50px 0px;
+  }
+  .app{
+    width: 100%;
+    margin: auto;
+    display: grid;
+    justify-items: center;
+    
+  }
+  .text{
+    width: 100%;
+    margin: auto;
+    display: grid;
+    justify-items: center;
+  }
+  .text h1{
+    justify-self: center;
+  }
+  .toWeb{
+    width: 100%;
+    display: grid;
+    justify-items: center;
+  }
+  .toWeb button{
+    width: 100%;
+  }
+ }
+
+/* forms */
+.form{
+  background-color: #BC1264;
+  margin: 40px 40px;
+  padding: 38px;
+  border-radius: 68px;
+}
+
+.form h1 {
+  font-family: 'Mohave';
+  font-size: 64px;
+  margin-top: 0px;
+  margin-bottom: 5px;
+}
+
+input[type=text], textarea, [type=email],[type=tel] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: none;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #ED7507;
+  width: 100%;
+  height: 60px;
+  border-radius: 20px;
+  border: none;
+  font-size: 32px;
+}
+
+.nameOfInput {
+  font-family: 'Inter';
+  font-size: 36px;
+}
+label{
+  font-family: 'Inter';
+  font-size: 20px;
+}
+
+#genreRow{
+  flex: 50%;
+}
+#whereToWatchRow{
+  flex: 50%
+}
+
+#checkbox{
+  display: flex;
+  flex-direction: row;
+}
+select{
+  width: 100%;
+  font-size: 20px;
+  padding: 5px;
+}
+
+
+@media screen and (max-width: 640px) {
+  #checkbox{
+    display: flex;
+    flex-direction: column;
+  }
+  #genreRow{
+    flex: 100%;
+  }
+  #whereToWatchRow{
+    flex: 100%
+  }
+  .form {
+    margin: 40px 0px;
+  }
+}
+
+/*contact us*/
+#contact{
+  text-align: center;
+  font-family: 'Mohave';
+  font-size: 100px;
+  font-weight: bold;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+/*character of the week*/
+  
+}
+ #winstoncontainer {
+   width: 900;
+   height: 900;
+ }
+#winstonbio {
+  background-color: #BC1264;
+  display: flex
+  width: 900px;
+  height: 650px;
+  border-radius: 68px;
+  padding-top: 32px;
+  padding-left: 35px;
+}
+#winstonbio h2 {
+  font-size: 40;
+  color: white;
+  font-family: 'DM Sans';
+}
+#winstonbio h1 {
+  font-size: 45px;
+    color: orange;
+  font-family: 'Mohave';
+  text-align: center;
+}
+#winstonbio p{
+    font-size: 36;
+  color: black;
+  font-family: 'DM Sans';
+}
+  
+#winstonphoto img {
+  align-content: center;
+  width: 98%;
+  border-radius: 68px;
+}
+
+/*memorable quotes*/
+
+.memorablequotes {
+  background-color: #BC1264;
+  padding: 30px;
+  border-radius:68px;
+}
+
+#quotesheader h1 {
+  font-family: 'Mohave';
+  font-size: 64px;
+  flex-direction: row;
+  text-align: center;
+
+}
+
+.imgRow1 img {
+  width: 200px;
+  height: 300px;
+  align-self: left;
+  border-radius:30px;
+  padding-right: 30px;
+}
+.quoteRow{
+  align-self: right;
+  color: white;
+  font-family: 'DM Sans';
+  font-size: 32px;
+}
+@media screen and (max-width: 1200px) {
+  .memorablequotes{
+    margin: 50px 0px;
+    flex-direction: row;
+    display: flex;
+    justify-items: center;
+    align-content: flex-end;
+    align-items: center;
+  }
+}
+
+/*about page*/
+#aboutpageheader {
+  background-color: #BC1264;
+  font-family: 'Mohave';
+  font-size: 48px;
+  font-weight: 900;
+  text-align: center;
+  padding: 3px;
+}
+#aboutliz {
+background-color: #BC1264;
+display: flex;
+}
+#aboutliz img{
+ width: 200px;
+  height: 300px;
+  align-self: right;
+  padding-right: 30px;
+  
+  
+}
+#aboutliz h1{
+align-self: center;
+  font-family: 'Mohave';
+  color: white;
+
+}
+#aboutliz p{
+align-self: center;
+  font-family: 'DM Sans';
+}
+#aboutsam{
+  background-color: white;
+ display: flex;
+}
+#aboutsam img{
+   width: 200px;
+  height: 300px;
+  align-self: right;
+  padding-right: 30px;
+  
+}
+#aboutsam h1{
+align-self: center;
+font-family: 'Mohave';
+color: #BC1264;
+ 
+}
+#aboutsam p{
+ align-self: center;
+  font-family: 'DM Sans';
+  display: flex;
+}
+
+.bioRow{
+align-self: center;
+}
