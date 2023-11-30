@@ -58,7 +58,7 @@ li a {
   color: white;
   padding: 35px;
   text-decoration: none;
-  font-size: 28px; 
+  font-size: 24px; /**/
   font-family: 'DM Sans';
 }
 li:hover {
@@ -288,7 +288,7 @@ nav {
   margin-bottom: 5px;
 }
 
-input[type=text], textarea {
+input[type=text], textarea, [type=email],[type=tel] {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -313,7 +313,7 @@ input[type=submit] {
 }
 label{
   font-family: 'Inter';
-  font-size: 24px;
+  font-size: 20px;
 }
 
 #genreRow{
@@ -327,7 +327,11 @@ label{
   display: flex;
   flex-direction: row;
 }
-
+select{
+  width: 100%;
+  font-size: 20px;
+  padding: 5px;
+}
 
 
 @media screen and (max-width: 640px) {
@@ -340,6 +344,9 @@ label{
   }
   #whereToWatchRow{
     flex: 100%
+  }
+  .form {
+    margin: 40px 0px;
   }
 }
 
@@ -422,8 +429,8 @@ label{
   font-size: 32px;
 }
 @media screen and (max-width: 1200px) {
-    .memorablequotes{
-        margin: 50px 0px;
+  .memorablequotes{
+    margin: 50px 0px;
     flex-direction: row;
     display: flex;
     justify-items: center;
@@ -439,5 +446,53 @@ label{
   font-size: 48px;
   font-weight: 900;
   text-align: center;
+  padding: 3px;
+}
+#aboutliz {
+background-color: #BC1264;
+display: flex;
+}
+#aboutliz img{
+ width: 200px;
+  height: 300px;
+  align-self: right;
+  padding-right: 30px;
+  
+  
+}
+#aboutliz h1{
+align-self: center;
+  font-family: 'Mohave';
+  color: white;
+
+}
+#aboutliz p{
+align-self: center;
+  font-family: 'DM Sans';
+}
+#aboutsam{
+  background-color: white;
+ display: flex;
+}
+#aboutsam img{
+   width: 200px;
+  height: 300px;
+  align-self: right;
+  padding-right: 30px;
+  
+}
+#aboutsam h1{
+align-self: center;
+font-family: 'Mohave';
+color: #BC1264;
+ 
+}
+#aboutsam p{
+ align-self: center;
+  font-family: 'DM Sans';
+  display: flex;
 }
 
+.bioRow{
+align-self: center;
+}
