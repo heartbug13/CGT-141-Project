@@ -7,10 +7,12 @@ html {
 header {
   background-color: black;
 }
+
 .header {
   margin-bottom: -43px;
 }
-header h1 {
+
+#headingOne, #headingTwo {
   color: #BC1264;
   font-family: 'Mohave';
   font-size: 64px;
@@ -18,10 +20,14 @@ header h1 {
   padding-top: 32px;
   padding-left: 35px;
 }
+#headingTwo{
+  display: none;
+}
 #filterButtonAndIcon {
   background-color: black;
   float: right;
 }
+
 #filterButton {
   width: 126px;
   height: 48px;
@@ -33,7 +39,8 @@ header h1 {
   margin-right: 67px;
   float: right;
 }
-#toogleNav{
+
+#toogleNav {
   background-color: black;
   border: none;
   color: #FFCD9E;
@@ -43,44 +50,62 @@ header h1 {
   margin-top: 35px;
   visibility: hidden;
 }
+
 ul {
   list-style-type: none;
   overflow: hidden;
   margin: 0px;
   padding: 0px;
 }
+
 li {
   float: left;
   padding-bottom: 30px;
   padding-top: 15px;
 }
+
 li a {
   color: white;
   padding: 35px;
   text-decoration: none;
-  font-size: 24px; /**/
+  font-size: 24px;
+  /**/
   font-family: 'DM Sans';
 }
+
 li:hover {
   background-color: #FFCD9E;
 }
+
 nav {
   background-color: black;
   width: 100%;
   margin: 0px;
 }
+
 @media screen and (max-width: 1678px) {
   li {
-      float: none;
-      width: 100%;
+    float: none;
+    width: 100%;
   }
+
   .nav {
     display: none;
-    }
-  #toogleNav{
+  }
+
+  #toogleNav {
     visibility: visible;
   }
- }
+}
+@media screen and (max-width: 800px) {
+  #headingOne{
+    display: none;
+  }
+  #headingTwo{
+    display: block;
+  }
+}
+
 
 /*home page*/
 
@@ -90,11 +115,13 @@ nav {
   border-radius: 68px;
   padding: 42px;
 }
-#filter h1{
+
+#filter h1 {
   font-size: 40px;
   font-family: 'Inter';
 }
-#filter button{
+
+#filter button {
   color: white;
   background-color: black;
   height: 27px;
@@ -104,10 +131,12 @@ nav {
   margin-right: 20px;
   margin-top: 16px;
 }
-#first{
+
+#first {
   color: #ED7507;
 }
-#second{
+
+#second {
   color: #BC1264
 }
 
@@ -119,50 +148,61 @@ nav {
   display: flex;
   flex-direction: row;
 }
+
 .imageRow img {
   width: 277px;
   height: 348px;
   border-radius: 30px;
   margin-right: 40px;
 }
+
 .imageRow {
   display: grid;
   align-content: center;
 }
+
 .infoRow {
   padding-left: 10px;
 }
+
 .ratingRow {
   display: grid;
   align-content: center;
 }
-.infoRow h1{
+
+.infoRow h1 {
   font-size: 48px;
   font-family: 'Mohave';
 }
-.infoRow p{
+
+.infoRow p {
   font-size: 15px;
   font-family: 'DM Sans';
   margin-top: -20px;
 }
-.infoRow h3{
+
+.infoRow h3 {
   font-size: 20px;
   font-family: 'DM Sans';
 }
-.ratingRow h2{
+
+.ratingRow h2 {
   font-size: 128px;
   color: #ED7507;
   font-family: 'Inter';
   font-weight: 900;
 }
+
 .streaming {
   background-color: white;
   color: black;
 }
+
 .genre {
   background-color: black;
   color: white;
 }
+
 .infoRow button {
   height: 27px;
   border: none;
@@ -176,32 +216,38 @@ nav {
   #filter {
     margin: 50px 0px;
   }
-  #filter h1{
+
+  #filter h1 {
     text-align: center;
   }
-  .filterButtons{
+
+  .filterButtons {
     text-align: center;
   }
-  .shows{
+
+  .shows {
     margin: 50px 0px;
     flex-direction: column;
     display: grid;
     justify-items: center;
   }
-  .infoRow{
+
+  .infoRow {
     text-align: center;
   }
-  .ratingRow{
+
+  .ratingRow {
     padding-top: 20px;
     height: 130px;
   }
-  .imageRow img{
+
+  .imageRow img {
     margin-right: 0px;
   }
- }
+}
 
 /*media platform page*/
-.streamingPlatform{
+.streamingPlatform {
   background-color: #BC1264;
   margin: 40px 40px;
   padding: 38px;
@@ -210,29 +256,35 @@ nav {
   flex-direction: row;
   font-size: 30px;
 }
-.app{
+
+.app {
   width: 30%
 }
+
 .app img {
   width: 300px;
   height: 300px;
   border-radius: 30px;
 }
-.text{
+
+.text {
   width: 30%;
   display: grid;
   align-content: center;
 }
+
 .text h1 {
   font-size: 32px;
   font-family: 'DM Sans';
 }
-.toWeb{
+
+.toWeb {
   width: 30%;
   display: grid;
   align-content: center;
 }
-.toWeb button{
+
+.toWeb button {
   width: 472px;
   height: 187px;
   background-color: #ED7507;
@@ -243,38 +295,43 @@ nav {
 }
 
 @media screen and (max-width: 1300px) {
-  .streamingPlatform{
+  .streamingPlatform {
     flex-direction: column;
     margin: 50px 0px;
   }
-  .app{
+
+  .app {
     width: 100%;
     margin: auto;
     display: grid;
     justify-items: center;
-    
+
   }
-  .text{
+
+  .text {
     width: 100%;
     margin: auto;
     display: grid;
     justify-items: center;
   }
-  .text h1{
+
+  .text h1 {
     justify-self: center;
   }
-  .toWeb{
+
+  .toWeb {
     width: 100%;
     display: grid;
     justify-items: center;
   }
-  .toWeb button{
+
+  .toWeb button {
     width: 100%;
   }
- }
+}
 
 /* forms */
-.form{
+.form {
   background-color: #BC1264;
   margin: 40px 40px;
   padding: 38px;
@@ -288,7 +345,10 @@ nav {
   margin-bottom: 5px;
 }
 
-input[type=text], textarea, [type=email],[type=tel] {
+input[type=text],
+textarea,
+[type=email],
+[type=tel] {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -311,23 +371,26 @@ input[type=submit] {
   font-family: 'Inter';
   font-size: 36px;
 }
-label{
+
+label {
   font-family: 'Inter';
   font-size: 20px;
 }
 
-#genreRow{
+#genreRow {
   flex: 50%;
 }
-#whereToWatchRow{
+
+#whereToWatchRow {
   flex: 50%
 }
 
-#checkbox{
+#checkbox {
   display: flex;
   flex-direction: row;
 }
-select{
+
+select {
   width: 100%;
   font-size: 20px;
   padding: 5px;
@@ -335,23 +398,26 @@ select{
 
 
 @media screen and (max-width: 640px) {
-  #checkbox{
+  #checkbox {
     display: flex;
     flex-direction: column;
   }
-  #genreRow{
+
+  #genreRow {
     flex: 100%;
   }
-  #whereToWatchRow{
+
+  #whereToWatchRow {
     flex: 100%
   }
+
   .form {
     margin: 40px 0px;
   }
 }
 
 /*contact us*/
-#contact{
+#contact {
   text-align: center;
   font-family: 'Mohave';
   font-size: 100px;
@@ -359,43 +425,75 @@ select{
   margin-top: 0px;
   margin-bottom: 0px;
 }
+#thankyou{
+  display: flex;
+  flex-direction: row;
+  margin: 40px 40px;
+  padding: 38px;
+  border-radius: 68px;
+}
+#thankyou img{
+  width: 300px;
+}
+#thankyou h1{
+  font-size: 100px;
+  font-family: 'Mohave';
+  margin-top: 0px;
+  margin-bottom: 5px;
+  color: #BC1264;
+}
+@media screen and (max-width: 900px) {
+  #thankyou{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  #thankyou img{
+    margin: auto;
+    display: grid;
+    justify-items: center;
+  }
+}
 
 /*character of the week*/
-  
+
+#winstoncontainer {
+  width: 900;
+  height: 900;
 }
- #winstoncontainer {
-   width: 900;
-   height: 900;
- }
+
 #winstonbio {
   background-color: #BC1264;
-  display: flex
-  width: 900px;
+  display: flex width: 900px;
   height: 650px;
   border-radius: 68px;
   padding-top: 32px;
   padding-left: 35px;
 }
+
 #winstonbio h2 {
   font-size: 40;
   color: white;
   font-family: 'DM Sans';
 }
+
 #winstonbio h1 {
   font-size: 45px;
-    color: orange;
+  color: orange;
   font-family: 'Mohave';
   text-align: center;
 }
-#winstonbio p{
-    font-size: 36;
+
+#winstonbio p {
+  font-size: 36;
   color: black;
   font-family: 'DM Sans';
 }
-  
+
 #winstonphoto img {
   align-content: center;
   width: 98%;
+  height: auto;
   border-radius: 68px;
 }
 
@@ -404,7 +502,10 @@ select{
 .memorablequotes {
   background-color: #BC1264;
   padding: 30px;
-  border-radius:68px;
+  border-radius: 68px;
+  margin: 50px 0px;
+  flex-direction: row;
+  display: flex;
 }
 
 #quotesheader h1 {
@@ -419,17 +520,19 @@ select{
   width: 200px;
   height: 300px;
   align-self: left;
-  border-radius:30px;
+  border-radius: 30px;
   padding-right: 30px;
 }
-.quoteRow{
+
+.quoteRow {
   align-self: right;
   color: white;
   font-family: 'DM Sans';
   font-size: 32px;
 }
+
 @media screen and (max-width: 1200px) {
-  .memorablequotes{
+  .memorablequotes {
     margin: 50px 0px;
     flex-direction: row;
     display: flex;
@@ -448,51 +551,59 @@ select{
   text-align: center;
   padding: 3px;
 }
+
 #aboutliz {
-background-color: #BC1264;
-display: flex;
+  background-color: #BC1264;
+  display: flex;
 }
-#aboutliz img{
- width: 200px;
+
+#aboutliz img {
+  width: 200px;
   height: 300px;
   align-self: right;
   padding-right: 30px;
-  
-  
+
+
 }
-#aboutliz h1{
-align-self: center;
+
+#aboutliz h1 {
+  align-self: center;
   font-family: 'Mohave';
   color: white;
 
 }
-#aboutliz p{
-align-self: center;
+
+#aboutliz p {
+  align-self: center;
   font-family: 'DM Sans';
 }
-#aboutsam{
+
+#aboutsam {
   background-color: white;
- display: flex;
+  display: flex;
 }
-#aboutsam img{
-   width: 200px;
+
+#aboutsam img {
+  width: 200px;
   height: 300px;
   align-self: right;
   padding-right: 30px;
-  
+
 }
-#aboutsam h1{
-align-self: center;
-font-family: 'Mohave';
-color: #BC1264;
- 
+
+#aboutsam h1 {
+  align-self: center;
+  font-family: 'Mohave';
+  color: #BC1264;
+
 }
-#aboutsam p{
- align-self: center;
+
+#aboutsam p {
+  align-self: center;
   font-family: 'DM Sans';
   display: flex;
 }
 
-.bioRow{
-align-self: center;
+.bioRow {
+  align-self: center;
 }
