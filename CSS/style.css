@@ -262,8 +262,8 @@ nav {
 }
 
 .app img {
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
   border-radius: 30px;
 }
 
@@ -429,14 +429,14 @@ select {
   display: flex;
   flex-direction: row;
   margin: 40px 40px;
-  padding: 38px;
   border-radius: 68px;
 }
 #thankyou img{
   width: 300px;
+  height: auto
 }
 #thankyou h1{
-  font-size: 100px;
+  font-size: 80px;
   font-family: 'Mohave';
   margin-top: 0px;
   margin-bottom: 5px;
@@ -447,28 +447,24 @@ select {
     display: flex;
     flex-direction: column;
     text-align: center;
+    margin: 40px 0px;
   }
   #thankyou img{
     margin: auto;
     display: grid;
     justify-items: center;
+    width: 200px;
   }
 }
 
 /*character of the week*/
 
-#winstoncontainer {
-  width: 900;
-  height: 900;
-}
-
 #winstonbio {
   background-color: #BC1264;
-  display: flex width: 900px;
-  height: 650px;
+  display: flex;
+  flex-direction: column;
   border-radius: 68px;
-  padding-top: 32px;
-  padding-left: 35px;
+  padding: 32px 35px;
 }
 
 #winstonbio h2 {
@@ -492,9 +488,9 @@ select {
 
 #winstonphoto img {
   align-content: center;
-  width: 98%;
+  width: 100%;
   height: auto;
-  border-radius: 68px;
+  border-radius: 34px;
 }
 
 /*memorable quotes*/
@@ -521,7 +517,6 @@ select {
   height: 300px;
   align-self: left;
   border-radius: 30px;
-  padding-right: 30px;
 }
 
 .quoteRow {
@@ -529,12 +524,13 @@ select {
   color: white;
   font-family: 'DM Sans';
   font-size: 32px;
+  padding-left: 30px;
 }
 
 @media screen and (max-width: 1200px) {
   .memorablequotes {
     margin: 50px 0px;
-    flex-direction: row;
+    flex-direction: column;
     display: flex;
     justify-items: center;
     align-content: flex-end;
@@ -551,59 +547,48 @@ select {
   text-align: center;
   padding: 3px;
 }
-
-#aboutliz {
-  background-color: #BC1264;
+.bio{
   display: flex;
+  flex-direction: row;
 }
-
-#aboutliz img {
+.bioimage img {
   width: 200px;
   height: 300px;
   align-self: right;
   padding-right: 30px;
-
-
 }
 
+.bioinfo p {
+  align-self: center;
+  font-family: 'DM Sans';
+}
+
+#aboutsam h1{
+  align-self: center;
+  font-family: 'Mohave';
+  color: #BC1264;
+}
+#aboutliz{
+  background-color: #BC1264;
+}
 #aboutliz h1 {
   align-self: center;
   font-family: 'Mohave';
   color: white;
-
 }
-
-#aboutliz p {
-  align-self: center;
-  font-family: 'DM Sans';
-}
-
-#aboutsam {
-  background-color: white;
-  display: flex;
-}
-
-#aboutsam img {
-  width: 200px;
-  height: 300px;
-  align-self: right;
-  padding-right: 30px;
-
-}
-
-#aboutsam h1 {
-  align-self: center;
-  font-family: 'Mohave';
-  color: #BC1264;
-
-}
-
-#aboutsam p {
-  align-self: center;
-  font-family: 'DM Sans';
-  display: flex;
-}
-
-.bioRow {
-  align-self: center;
+@media screen and (max-width: 800px) {
+  .bio{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+  }
+  .bioimage img{
+    margin: auto;
+    display: grid;
+    justify-items: center;
+  }
+  .bioinfo h1{
+    text-align: center;
+  }
 }
